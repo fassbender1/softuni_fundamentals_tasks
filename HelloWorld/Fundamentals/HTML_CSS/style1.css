@@ -1,0 +1,13 @@
+style.css
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+.coloring {
+    color: green;
+}
+
+#importantHeading {
+    color: yellow;
+}
