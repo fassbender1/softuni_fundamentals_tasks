@@ -7,13 +7,11 @@ def numbers(sequence):
         if action == "Add":
             sequence.append(value)
         elif action == "Remove":
-            # if value in sequence:
             indexes_of_matching_value = list(map(int, (index for index in range(len(sequence)) if value == sequence[index])))
             first_occurrence_index = indexes_of_matching_value[0]
             sequence.pop(first_occurrence_index)
         elif action == "Replace":
             second_value = command[2]
-            # if value in sequence:
             indexes_of_matching_value = list(map(int, (index for index in range(len(sequence)) if value == sequence[index])))
             first_occurrence_index = indexes_of_matching_value[0]
             sequence.pop(first_occurrence_index)
